@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Cheat Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 p-4 md:p-8 font-sans">
+
+    <div class="max-w-5xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+
+        <header class="mb-8 border-b pb-4">
+            <h1 class="text-3xl font-extrabold text-center text-blue-600">
+                [cite_start]TAILWIND CSS - CHEAT SHEET [cite: 1]
+            </h1>
+            <p class="text-center text-gray-500 mt-2">Classes de Personalização e seus usos básicos.</p>
+        </header>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-blue-100 text-blue-800">
+                        <th class="p-3 border-b-2 border-blue-200 w-1/4">Categoria</th>
+                        <th class="p-3 border-b-2 border-blue-200 w-2/4">Classes</th>
+                        <th class="p-3 border-b-2 border-blue-200 w-1/4">Descrição Básica</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">1. [cite_start]Layout / Display [cite: 1]</td>
+                        [cite_start]<td class="p-3 font-mono text-sm text-pink-600">block, inline, inline-block, flex,
+                            inline-flex, grid, hidden [cite: 1]</td>
+                        <td class="p-3 text-sm text-gray-600">Define o tipo de exibição (renderização) do elemento na
+                            página.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">2. [cite_start]Flexbox [cite: 1]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            Direção: flex-row, flex-col, flex-row-reverse, flex-col-reverse<br>
+                            Alinhamento Y: items-start, items-center, items-end, items-stretch<br>
+                            [cite_start]Alinhamento X: justify-start, justify-center, justify-end, justify-between,
+                            justify-around, justify-evenly [cite: 1]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Controla o alinhamento e a direção dos itens dentro de um
+                            contêiner flexível.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">3. [cite_start]Espaçamento [cite: 1]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            Margin: m-4, mt-4, mb-4, ml-4, mr-4, mx-4, my-4<br>
+                            Padding: p-4, pt-4, pb-4, pl-4, pr-4, px-4, py-4<br>
+                            [cite_start]Escala comum: 0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24 [cite: 1]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Aplica margens (espaço externo) e preenchimento (espaço
+                            interno).</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">4. [cite_start]Tamanho [cite: 1]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            Width: w-full, w-screen, w-1/2, w-1/3, w-64<br>
+                            Height: h-full, h-screen, h-64<br>
+                            [cite_start]Max Width: max-w-sm, max-w-md, max-w-lg, max-w-xl [cite: 1]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Controla a largura (width) e altura (height) dos
+                            elementos.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">5. [cite_start]Cores [cite: 1]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            [cite_start]Background: bg-red-500, bg-blue-500, bg-green-500, bg-gray-200, bg-black [cite:
+                            1][cite_start], bg-white [cite: 2]<br>
+                            [cite_start]Texto: text-white, text-black, text-blue-600, text-gray-700 [cite: 2]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Define a cor de fundo e a cor da fonte.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">6. [cite_start]Tipografia [cite: 2]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            Tamanho: text-xs, text-sm, text-base, text-lg, text-xl, text-2xl, text-4xl, text-6xl<br>
+                            Peso: font-light, font-normal, font-medium, font-bold, font-extrabold<br>
+                            [cite_start]Alinhamento: text-left, text-center, text-right [cite: 2]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Ajusta as propriedades da fonte, como tamanho, espessura e
+                            alinhamento do texto.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">7. [cite_start]Bordas e 8. Sombra [cite: 2]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            Bordas: border, border-2, border-4, border-red-500, rounded, rounded-md, rounded-lg,
+                            rounded-xl, rounded-full<br>
+                            [cite_start]Sombra: shadow, shadow-md, shadow-lg, shadow-xl, shadow-2xl [cite: 2]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Cria linhas de contorno (com espessura/arredondamento) e
+                            efeitos de profundidade.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">9. [cite_start]Hover e 10. Transições [cite: 2]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            Hover: hover:bg-blue-500, hover:text-white, hover:scale-105, hover:shadow-lg<br>
+                            [cite_start]Transições: transition, duration-300, ease-in, ease-out [cite: 2]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Aplica interatividade ao passar o mouse e suaviza as
+                            animações visuais.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">11. [cite_start]Position e 12. Grid [cite: 2]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            Position: relative, absolute, fixed, sticky, top-0, left-0, right-0, bottom-0<br>
+                            [cite_start]Grid: grid, grid-cols-2, grid-cols-3, grid-cols-4, gap-4, gap-8 [cite: 2]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Controla a posição exata de elementos na tela e estrutura
+                            leiautes em grade.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3 font-semibold text-gray-700">13. [cite_start]Responsividade [cite: 2]</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            Prefixos: sm:, md:, lg:, xl:, 2xl:<br>
+                            [cite_start]Exemplo: text-sm md:text-lg lg:text-2xl [cite: 2]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Aplica estilos baseados no tamanho da tela do dispositivo
+                            (Mobile First).</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50 bg-blue-50">
+                        <td class="p-3 font-semibold text-gray-700">Padrões Úteis</td>
+                        <td class="p-3 font-mono text-sm text-pink-600">
+                            14. [cite_start]Centralização rápida: flex justify-center items-center [cite: 2]<br>
+                            15. [cite_start]Container padrão: max-w-md mx-auto p-6 [cite: 2] [cite_start]rounded-lg
+                            shadow-lg [cite: 3]<br>
+                            [cite_start]Exemplo: &lt;h1 class="text-2xl font-bold text-center"&gt;Tailwind
+                            CSS&lt;/h1&gt; [cite: 3]
+                        </td>
+                        <td class="p-3 text-sm text-gray-600">Combinações prontas para centralizar conteúdo e criar
+                            caixas padronizadas de texto.</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
